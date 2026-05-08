@@ -1,0 +1,7 @@
+ssh -i "C:\Users\RITESH\Downloads\mykeypair.pem" ec2-user@YOUR_IP
+
+sudo yum install python3 -y
+
+echo "<h1>Hello from EC2! - Ritesh</h1><p>My first cloud application running on Amazon EC2</p>" > index.html
+
+sudo python3 -m http.server 80
