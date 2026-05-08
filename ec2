@@ -1,0 +1,12 @@
+chmod 400 your-key.pem
+ssh -i "your-key.pem" ec2-user@your-public-ip
+
+# Install Python (usually pre-installed)
+sudo yum update -y
+sudo yum install python3 -y
+
+# Create a simple app
+echo "Hello from EC2!" > index.html
+
+# Run a web server on port 80
+sudo python3 -m http.server 80
